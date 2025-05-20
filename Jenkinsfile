@@ -97,11 +97,11 @@ pipeline {
             steps{
                 script{
                         dir('backend'){
-                            docker_build("")
+                            docker_build()
                         }
                     
                         dir('frontend'){
-                            docker_build("")
+                            docker_build()
                         }
                 }
             }
