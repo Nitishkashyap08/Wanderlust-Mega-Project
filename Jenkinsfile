@@ -113,8 +113,8 @@ pipeline {
         stage("Docker: Push to DockerHub") {
     steps {
         script {
-            docker_push("nitishkashyap08/wanderlust-backend-beta", "${params.BACKEND_DOCKER_TAG}", "nitishkashyap08") 
-            docker_push("nitishkashyap08/wanderlust-frontend-beta", "${params.FRONTEND_DOCKER_TAG}", "nitishkashyap08")
+            docker_push("wanderlust-backend-beta", "${params.BACKEND_DOCKER_TAG}", "nitishkashyap08") 
+            docker_push("wanderlust-frontend-beta", "${params.FRONTEND_DOCKER_TAG}", "nitishkashyap08")
         }
     }
 }
